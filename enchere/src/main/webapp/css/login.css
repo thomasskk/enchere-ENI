@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import 'form_control.css';
+
+* {
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+p {
+	margin: 0px;
+	text-align: center;
+	font-size: 20px;
+	font-family: system-ui;
+	color: white;
+	background-color: #2ca735;
+	padding: 10px;
+}
+
+.scales {
+	color: #00a8c3;
+	position: absolute;
+	float: left;
+	width: 20px;
+	left: 33px;
+	top: 210px;
+}
+
+.alert {
+	padding: 20px;
+	background-color: #f44336; /* Red */
+	color: white;
+	display: none;
+}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.closebtn:hover {
+	color: black;
+}
+
+.box {
+	height: 0px;
+}
+
+.register {
+	position: relative;
+	bottom: 19px;
+	left: 108px;
+	font-size: 13px;
+	font-family: system-ui;
+}
+
+:link {
+	text-decoration: none;
+	color: black;
+}
+
+.remember {
+	position: relative;
+	bottom: 119px;
+	left: 32px;
+	-webkit-transform: scale(0.95);
+}
+
+.rememberLabel {
+	position: relative;
+	bottom: 121px;
+	left: 31px;
+	font-size: 12px;
+	font-family: system-ui;
+}
+
+.forget {
+	position: relative;
+	left: 98px;
+	font-size: 11px;
+	font-family: system-ui;
+	color: #2ca735;
+}
+
+body {
+	background-color: #0080ff;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	width: 400px;
+	max-width: 100%;
+	overflow: auto;
+	box-shadow: 5px 5px 20px;
+}
+
+.form {
+	padding: 50px 35px;
+	position: relative;
+	
+}
+
+.form button {
+	background-color: #2ca735;
+	border: 2px solid #2ca735;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 50px;
+	width: 100%;
+	cursor:pointer;	
+}

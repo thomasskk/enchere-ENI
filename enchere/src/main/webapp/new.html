@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/NouvelleVente.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Nouvelle vente</title>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="http://localhost:8080/fds/accueil.html" class="logo"> <img
+			src="http://localhost:8080/fds/img/auction.svg" alt="lgo">
+		</a>
+
+	</nav>
+	<div class="global">
+		<div class="item">
+			<label for="photoArticle">Photo de l'article : </label>
+			
+		</div>
+		<div class="container">
+			<p>Détail vente</p>
+			<form id="form" class="form">
+				<div class="input-container">
+					<div class="input-c1">
+						<div class="form-control">
+							<label for="nomArticle">Article : </label> <input type="text"
+								id="article" name="article" required="required" />
+
+						</div>
+						<div class="form-control">
+							<label for="Description">Description: </label> <input type="text"
+								id="description" name="description" required="required" />
+
+
+
+						</div>
+						<div class="form-control">
+							<label for="Categorie">Catégorie </label> <select size="1">
+								<option id="option1" name="categorie" value="1">Informatique</option>
+								<option id="option2" name="categorie" value="2">Ameublement</option>
+								<option id="option3" name="categorie" value="3">Vêtement</option>
+								<option id="option4" name="categorie" value="4">Sport&Loisirs</option>
+							</select>
+
+
+						</div>
+						<div class="form-control">
+							<label for="PhotoArticle">Photo de l'article : </label> <input
+								type="file" id="photoArticle" name="photoArticle"
+								required="required" />
+
+
+						</div>
+						<div class="form-control">
+							<label for="MiseAPrix">Mise à prix : </label> <input
+								type="number" id="prix" name="prix" required="required" min="0" />
+
+						</div>
+
+						<div class="form-control">
+							<label for="debutEnchere">Début de l'enchère : </label> <input
+								type="date" id="debutEnchere" name="debutEnchere"
+								required="required" />
+
+						</div>
+						<div class="form-control">
+							<label for="finEnchere">Fin de l'enchère : </label> <input
+								type="date" id="finEnchere" name="finEnchere"
+								required="required" />
+
+						</div>
+						
+					<div class="retrait">
+					<label class="titre">Retrait </label>
+						<div class="formRetrait">
+							<label for="Rue">Rue: </label> <input type="text"
+								id="rue" name="rue" required="required" />
+						</div>
+						<div class="formRetrait">
+							<label for="CodePostal">Code Postal: </label> <input type="text"
+								id="codepostal" name="codepostal" required="required" />
+
+
+
+						</div>
+						<div class="formRetrait">
+							<label for="ville">Ville: </label> <input type="text"
+								id="ville" name="ville" required="required" />
+					</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="button-container">
+               <button class="register" id="register" type="submit">Enregistrer</button>
+               <button class="cancel" id="cancel" type="button">Annuler</button>
+               <button class="cancel" id="annulerVente" type="button">Annuler la vente</button>
+            </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

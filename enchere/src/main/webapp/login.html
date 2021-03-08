@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="css/login.css">
+      <meta charset="UTF-8">
+      <title>Connexion</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="container">
+         <div class="alert" id="alert">
+            <span class="closebtn" id="alert_text"
+               onclick="this.parentElement.style.display='none';">&times;</span>
+            Identifiant ou mot de passe incorrect
+         </div>
+         <p>Bienvenue</p>
+         <form id="form" class="form">
+            <div class="form-control">
+               <label for="username">Identifiant </label> <input type="text"
+                  placeholder="Identifiant" id="username" /> <i
+                  class="fas fa-check-circle"></i> <i
+                  class="fas fa-exclamation-circle"></i> <small>Error message</small>
+            </div>
+            <div class="form-control">
+               <label for="password">Mot de passe</label> <a
+                  href="http://localhost:8080/fds/forget.html" class="forget">Mot
+               de passe oublié ?</a> <input type="password" placeholder="Mot de passe"
+                  id="password" /> <i class="fas fa-check-circle"></i> <i
+            	      class="fas fa-exclamation-circle"></i> <small>Error message</small>
+            </div>
+            <button id='connect' type='submit'>Connexion</button>
+         </form>
+         <div class="box">
+            <input type="checkbox" id="remember" class="remember" unchecked>
+            <label for="scales" class="rememberLabel">Rester connecté</label>
+         </div>
+         <a href="http://localhost:8080/fds/register.html" class="register">
+         Pas de compte ? <span style="color: #2ca735">Inscrivez vous</span>
+         </a>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+      <script src="js/login.js"></script>
+   </body>
+</html>
+

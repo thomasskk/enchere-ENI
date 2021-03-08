@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="css/register.css">
+      <meta charset="UTF-8">
+      <title>Inscription</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="container">
+      <div class="alert" id="alert">
+            <span class="closebtn" id="alert_text"
+               onclick="this.parentElement.style.display='none';">&times;</span>
+               Pseudo ou Email déjà existant
+         </div>
+         <p>Inscription</p>
+         <form id="form" class="form">
+            <div class="input-container">
+               <div class="input-c1">
+                  <div class="form-control">
+                     <label for="username">Pseudo </label>
+                     <input type="text" placeholder="Identifiant" id="username" name="pseudo">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="fname">Prénom </label>
+                     <input type="text" placeholder="fname" id="fname" name="prenom">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="phone">Téléphone </label>
+                     <input type="tel" placeholder="phone" id="phone" name="telephone">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="psotal">Code postal </label>
+                     <input type="text" placeholder="psotal" id="psotal" name="code_postal">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="password0">Mot de passe </label>
+                     <input type="text" placeholder="password0" id="password0" name="mot_de_passe">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+               </div>
+               <div class="input-c2">
+                  <div class="form-control">
+                     <label for="lname">Nom </label>
+                     <input type="text" placeholder="lname" id="lname" name="nom">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="email">Email </label>
+                     <input type="email" placeholder="email" id="email" name="email">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="username">Rue </label>
+                     <input type="text" placeholder="Identifiant" id="street" name="rue">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="username">Ville </label>
+                     <input type="text" placeholder="Identifiant" id="city" name="ville">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+                  <div class="form-control">
+                     <label for="password1">Confirmation </label>
+                     <input type="password" placeholder="password1" id="password1">
+                     <i class="fas fa-check-circle"></i>
+                     <i class="fas fa-exclamation-circle"></i>
+                     <small>Error
+                     message</small>
+                  </div>
+               </div>
+            </div>
+            <div class="button-container">
+               <button class="register" id="register" type="submit">S'inscrire</button>
+               <button class="cancel" id="cancel" type="button">Annuler</button>
+            </div>
+         </form>
+      </div>
+      <script src="js/register.js"></script>
+   </body>
+</html>

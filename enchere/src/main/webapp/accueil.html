@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/accueil.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<nav class="navbar" id="nav">
+		<a href="http://localhost:8080/fds/accueil.html" class="logo"> <img
+			src="http://localhost:8080/fds/img/auction.svg" alt="lgo">
+		</a>
+		<ul class="nav-links" id="nav2">
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/login.html">Se Connecter</a></li>
+
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/register.html">S'inscrire</a></li>
+		</ul>
+
+		<ul class="nav-links" id="nav1">
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/encheres.html">Enchères </a></li>
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/new.html">Vendre un article</a></li>
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/myprofil.html">Mon profil</a></li>
+			<li class="nav-item"><a
+				href="http://localhost:8080/fds/deco.html">Déconnexion</a></li>
+		</ul>
+	</nav>
+	<div class="bpx">
+		<div class="container01">
+			<p>Filtres</p>
+
+			<div class="container0" id="container0">
+
+				<div class="container1">
+					<div class="column1">
+						<div class="search">
+							<input type="text" placeholder="Search.." name="search"
+								id="search_value">
+						</div>
+						<div class="options">
+							<label for="pet-select">Catégorie:</label> <select name="select"
+								id="select">
+								<option value="all">Toutes</option>
+							</select>
+						</div>
+					</div>
+					<div class="column2">
+						<button id="search" type="submit">Chercher</button>
+					</div>
+				</div>
+				<div class="container2" id="container2">
+					<div class="purchase">
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="Achats">Achats</label>
+						</div>
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="enchères_ouvertes">enchères ouvertes</label>
+						</div>
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="mes_enchères">mes enchères</label>
+						</div>
+
+
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="mes_enchères_remportées">mes enchères remportées</label>
+						</div>
+					</div>
+					<div class="sale">
+						<div class="purchase_box">
+							<input type="checkbox" id="my_sales" class="my_sales"
+								unchecked=""> <label for="Mes_ventes">Mes ventes</label>
+						</div>
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="mes_ventes_en_cours">mes ventes en cours</label>
+						</div>
+						<div class="purchase_box">
+							<input type="checkbox" id="purchase" unchecked=""> <label
+								for="mes_ventes_débutées">mes ventes débutées</label>
+						</div>
+
+						<div class="terminées">
+							<input type="checkbox" id="terminées" unchecked=""> <label
+								for="mes_ventes_terminées">mes ventes terminées</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="wall" id="wall">
+		<div class="item">
+			<img src="http://localhost:8080/fds/img/pc.jpg" alt="lgo">
+			<div class="detail">
+				<label for="name">pc</label> <label for="name">Prix :150</label> <label
+					for="name">Fin de l'enchÃ¨re :2021-01-01Z</label> <label for="name">Vendeur
+					:1</label>
+			</div>
+		</div>
+		<div class="item">
+			<img src="http://localhost:8080/fds/img/bureau.jpg" alt="lgo">
+			<div class="detail">
+				<label for="name">bureau</label> <label for="name">Prix :200</label>
+				<label for="name">Fin de l'enchÃ¨re :2021-01-01Z</label> <label
+					for="name">Vendeur :1</label>
+			</div>
+		</div>
+		<div class="item">
+			<img src="http://localhost:8080/fds/img/chaise.jpg" alt="lgo">
+			<div class="detail">
+				<label for="name">chaise</label> <label for="name">Prix :250</label>
+				<label for="name">Fin de l'enchÃ¨re :2021-01-01Z</label> <label
+					for="name">Vendeur :1</label>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/accueil.js"></script>
+
+
+</body>
+</html>
